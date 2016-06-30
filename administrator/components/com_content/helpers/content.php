@@ -36,12 +36,12 @@ class ContentHelper extends JHelperContent
 		);
 		JHtmlSidebar::addEntry(
 			JText::_('COM_CONTENT_SUBMENU_CATEGORIES'),
-			'index.php?option=com_content&veiw=share',
-			$vName == 'share');
-		JHtmlSidebar::addEntry(
-			JText::_('COM_CONTENT_SUBMENU_CATEGORIES'),
 			'index.php?option=com_categories&extension=com_content',
-			$vName == 'categories');
+			$vName == 'category');
+		JHtmlSidebar::addEntry(
+			JText::_('COM_CONTENT_SUBMENU_SHARE'),
+			'index.php?option=com_content&view=share',
+			$vName == 'share');
 		JHtmlSidebar::addEntry(
 			JText::_('COM_CONTENT_SUBMENU_FEATURED'),
 			'index.php?option=com_content&view=featured',
